@@ -52,7 +52,7 @@ class PdfQA {
      });
   }
 
-  async loadDocumwents(){
+  async loadDocuments(){
     console.log("Loading PDFs...");
     const pdfLoader = new PDFLoader(path.join(import.meta.dirname,this.pdfDocument));
     this.documents = await pdfLoader.load();
